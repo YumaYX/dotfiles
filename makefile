@@ -9,7 +9,11 @@ DESTS      := $(addprefix $(DEST)/, $(DOTFILES))
 list:
 	@ls -1 $(DOTFILES)
 
+BUNDLE := $${HOME}/.bundle
+
 install: $(DESTS)
+	@mkdir -p $(BUNDLE)
+	@ln -fnsv $(abspath bundle_config) $(BUNDLE)/config
 
 $(DEST)/%: %
 	@ln -fnsv $(abspath $<) $@
