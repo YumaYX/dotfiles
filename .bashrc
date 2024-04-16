@@ -19,3 +19,4 @@ PS1='[\u@\h \w] $ '
 export GREP_OPTIONS='--color=auto'
 export PATH="/work/bin:$PATH"
 alias halt='sudo /usr/sbin/shutdown -h 0'
+alias reboot='sudo /usr/sbin/reboot'
