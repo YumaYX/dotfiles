@@ -15,3 +15,5 @@
 	co = checkout
 [color]
 	ui = true
+[safe]
+	directory = /vagrant

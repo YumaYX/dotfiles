@@ -22,3 +22,6 @@ alias halt='sudo /usr/sbin/shutdown -h 0'
 alias reboot='sudo /usr/sbin/reboot'
 alias v='/usr/bin/vagrant'
 
+function gitc() {
+  git clone git@github.com:YumaYX/${1}.git
+}
