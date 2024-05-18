@@ -16,3 +16,6 @@ $(DEST)/%: %
 
 act:
 	act
+
+clean:
+	rm -f $(DESTS)
