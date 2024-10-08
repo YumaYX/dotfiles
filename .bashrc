@@ -22,6 +22,8 @@ alias grep="grep --color=auto"
 alias halt='sudo /usr/sbin/shutdown -h 0'
 alias reboot='sudo /usr/sbin/reboot'
 alias v='/usr/bin/vagrant'
+alias gui='sudo systemctl set-default graphical.target'
+alias cui='sudo systemctl set-default multi-user.target'
 
 function gitc() {
   git clone git@github.com:YumaYX/${1}.git
