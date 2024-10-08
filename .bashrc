@@ -15,6 +15,7 @@ export PATH
 
 # User specific aliases and functions
 PS1='[\u@\h \w] $ '
+alias sample="PS1='$ '"
 
 export PATH="/work/bin:$PATH"
 
