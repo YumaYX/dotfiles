@@ -12,8 +12,8 @@ if [ -f /home/linuxbrew/.linuxbrew/bin/brew ]; then
 fi
 
 # rbenv
-#export PATH="$HOME/.rbenv/bin:$PATH"
-#if which rbenv > /dev/null 2>&1 ; then eval "$(rbenv init -)"; fi
+export PATH="$HOME/.rbenv/bin:$PATH"
+if which rbenv > /dev/null 2>&1 ; then eval "$(rbenv init -)"; fi
 
 # rust
 if [ -f ${HOME}/.cargo/env ]; then
