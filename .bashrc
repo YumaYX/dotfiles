@@ -26,6 +26,9 @@ alias v='/usr/bin/vagrant'
 alias gui='sudo systemctl set-default graphical.target'
 alias cui='sudo systemctl set-default multi-user.target'
 
+alias act-service='sudo podman system service -t 0 &'
+alias act='sudo /root/bin/act'
+
 function gitc() {
   git clone git@github.com:YumaYX/${1}.git
 }
