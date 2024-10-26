@@ -29,6 +29,6 @@ alias cui='sudo systemctl set-default multi-user.target'
 alias act-service='sudo podman system service -t 0 &'
 alias act='sudo /root/bin/act'
 
-function gitc() {
-  git clone git@github.com:YumaYX/${1}.git
-}
+function ansible-galayx-init-roles() { ansible-galaxy init roles/${1}; }
+function gitc() { git clone git@github.com:YumaYX/${1}.git; }
+
