@@ -15,11 +15,13 @@ export PATH
 
 # User specific aliases and functions
 PS1='[\u@\h \w] $ '
-alias sample="PS1='$ '"
-
 export PATH="/work/bin:$PATH"
 
+# Ruby
+export RUBYOPT=--yjit
+
 # System
+alias sample="PS1='$ '"
 alias grep="grep --color=auto"
 alias halt='sudo /usr/sbin/shutdown -h 0'
 alias reboot='sudo /usr/sbin/reboot'
