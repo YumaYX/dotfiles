@@ -46,3 +46,5 @@ function ansible-galayx-init-roles() { ansible-galaxy init roles/${1}; }
 # Git
 function gitc() { git clone git@github.com:YumaYX/${1}.git; }
 
+# Rust
+alias ccargo='podman run --rm -v $(pwd):/m:z -w /m rust:latest cargo'
