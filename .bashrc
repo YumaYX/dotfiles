@@ -41,7 +41,7 @@ alias v='/usr/bin/vagrant'
 alias venv='source venv/bin/activate'
 
 # Ansible
-function ansible-galayx-init-roles() { ansible-galaxy init roles/${1}; }
+function ansible-galaxy-init-roles() { ansible-galaxy init roles/${1}; }
 
 # Git
 function gitc() { git clone git@github.com:YumaYX/${1}.git; }
