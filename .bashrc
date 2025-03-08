@@ -12,6 +12,8 @@ then
 fi
 export PATH
 
+alias today='date +%F'
+alias yyyymmdd='date +%F | tr -d "-"'
 
 # User specific aliases and functions
 PS1='[\u@\h \w] $ '
