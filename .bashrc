@@ -16,7 +16,7 @@ alias today='date +%F'
 alias yyyymmdd='date +%F | tr -d "-"'
 
 # User specific aliases and functions
-PS1='[\u@\h \w] $ '
+export PS1='\[\e[32m\]\u\[\e[m\]@\[\e[36m\]\h \[\e[33m\]\w\[\e[m\]\$ '
 export PATH="/work/bin:$PATH"
 
 # Ruby
