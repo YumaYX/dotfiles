@@ -12,18 +12,15 @@ then
 fi
 export PATH
 
+# User specific aliases and functions
+export PATH="/work/bin:$PATH"
 alias today='date +%F'
 alias yyyymmdd='date +%F | tr -d "-"'
-
-# User specific aliases and functions
-export PS1='\[\e[32m\]\u\[\e[m\]@\[\e[36m\]\h \[\e[38;5;208m\]\w\[\e[m\]\$ '
-export PATH="/work/bin:$PATH"
 
 # Ruby
 export RUBYOPT=--yjit
 
 # System
-alias sample="PS1='$ '"
 alias grep="grep --color=auto"
 alias halt='sudo /usr/sbin/shutdown -h 0'
 alias reboot='sudo /usr/sbin/reboot'
@@ -51,3 +48,11 @@ function gitc() { git clone git@github.com:YumaYX/${1}.git; }
 
 # Rust
 alias ccargo='podman run --rm -v $(pwd):/m:z -w /m rust:latest cargo'
+
+# Prompt
+alias sample="PS1='$ '"
+resetprompt() {
+  PS1='\[\e[38;5;208m\]\u\[\e[0m\]@\[\e[38;5;208m\]\h \w\[\e[0m\]\$ '
+}
+resetprompt
+
