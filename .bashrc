@@ -25,6 +25,7 @@ alias grep="grep --color=auto"
 alias halt='sudo /usr/sbin/shutdown -h 0'
 alias reboot='sudo /usr/sbin/reboot'
 alias update='sudo /usr/bin/dnf -y update'
+alias sl='/bin/ls'
 
 # GUI/CUI
 alias gui='sudo systemctl set-default graphical.target'
