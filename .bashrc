@@ -57,3 +57,9 @@ resetprompt() {
 }
 resetprompt
 
+# awk
+alias awkf="awk '{print \$1}'"
+alias awks="awk '{print \$2}'"
+alias awkt="awk '{print \$3}'"
+alias awkl="awk '{print \$NF}'"
+
