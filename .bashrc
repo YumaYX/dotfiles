@@ -18,7 +18,7 @@ alias today='date +%F'
 alias yyyymmdd='date +%F | tr -d "-"'
 
 # Ruby
-export RUBYOPT=--yjit
+#export RUBYOPT=--yjit
 
 # System
 alias grep="grep --color=auto"
