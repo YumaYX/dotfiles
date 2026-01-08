@@ -47,8 +47,13 @@ function ansible-galaxy-init-roles() { ansible-galaxy init roles/${1}; }
 # Git
 function gitc() { git clone git@github.com:YumaYX/${1}.git; }
 
-# Rust
-alias ccargo='podman run --rm -v $(pwd):/m:z -w /m rust:latest cargo'
+# Rust - cargo
+alias ccargo='podman run --userns=keep-id --rm -v $PWD:/m:Z -w /m docker.io/library/rust:latest cargo'
+# ruby
+rubyrepo='docker.io/library/ruby:latest'
+workdir='/w'
+alias cruby='podman run --userns=keep-id --rm -v $PWD:${workdir}:Z -w ${workdir} ${rubyrepo} ruby'
+alias cbundle='mkdir -p $PWD/vendor/bundle; podman run --userns=keep-id --rm -it -v "$PWD:${workdir}:Z" -v "$PWD/vendor/bundle:/usr/local/bundle:Z" -w ${workdir} ${rubyrepo} bundle'
 
 # Prompt
 alias sample="PS1='$ '"
