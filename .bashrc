@@ -33,9 +33,11 @@ alias sl='/bin/ls'
 alias gui='sudo systemctl set-default graphical.target'
 alias cui='sudo systemctl set-default multi-user.target'
 
-# act
-alias act-service='sudo podman system service -t 0 &'
-alias act='sudo /root/bin/act'
+# podman
+alias podman-service='sudo podman system service -t 0 &'
+
+# brew
+test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # Vagrant
 alias v='/usr/bin/vagrant'
