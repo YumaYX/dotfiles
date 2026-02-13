@@ -14,6 +14,7 @@ if which rbenv > /dev/null 2>&1 ; then eval "$(rbenv init -)"; fi
 if [ -f ${HOME}/.cargo/env ]; then
   . ${HOME}/.cargo/env
 fi
+export PATH="${HOME}/.cargo/bin:$PATH"
 
 # brew
 if [ -f /home/linuxbrew/.linuxbrew/bin/brew ]; then
